@@ -88,3 +88,42 @@
 #
 # for new_row in new_matrix:
 #     print(*new_row)
+
+"""Подсчитать и вывести:
+общее количество символов в строке;
+исходную строку повторенную 3 раза;
+первый символ строки;
+первые три символа строки;
+последние три символа строки;
+строку в обратном порядке;
+строку с удаленным первым и последним символом."""
+# s = input()
+# print(len(s), s*3, s[0], s[:3], s[-3:], s[::-1], s[1:-1], sep='\n')
+
+"""число a – должно быть палиндромом;
+число b – должно быть простым;
+число c – должно быть четным."""
+# объявление функции
+
+
+# def is_valid_password(password):
+#     palindrome, simple, even = False, False, False
+#     password = password.split(":")
+#     if password[0] == password[0][::-1]:
+#         palindrome = True
+#
+#
+# # считываем данные
+# psw = input()
+#
+# # вызываем функцию
+# print(is_valid_password(psw))
+
+"""реализация алгоритма сортировки выбором"""
+# for i in range(n):
+#     minimum = i
+#     for j in range(i + 1, n):
+#         if a[j] < a[minimum]:
+#             minimum = j
+#     a[minimum], a[i] = a[i], a[minimum]
+# print(a)
