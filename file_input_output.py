@@ -233,3 +233,33 @@
 #         if num_2 - num_1 >= 60:
 #             with open('output.txt', 'a', encoding='utf-8') as output:
 #                 print(el[0], file=output)
+
+"""Вам дается текстовый файл, содержащий некоторое количество непустых строк.
+На основе него сгенерируйте новый текстовый файл, содержащий те же строки в обратном порядке."""
+
+# with open('file_sources/dataset_24465_4.txt') as inner, open('file_sources/result.txt', 'w') as outer:
+#     inner_lines = inner.read().splitlines()
+#     print(*list(reversed(inner_lines)), sep='\n', file=outer)
+
+
+"""Вам дана в архиве (ссылка) файловая структура, состоящая из директорий и файлов.
+
+Вам необходимо распаковать этот архив, и затем найти в данной в файловой структуре все директории, в которых есть
+хотя бы один файл с расширением ".py".
+
+Ответом на данную задачу будет являться файл со списком таких директорий, отсортированных в лексикографическом
+порядке."""
+# import os
+#
+#
+# def finder(directory):
+#     result_dirs = set()
+#     for current_dir, _, files in os.walk(directory):
+#         for file in files:
+#             if file.endswith('.py'):
+#                 result_dirs.add(current_dir)
+#     return sorted(list(result))
+#
+#
+# with open('result.txt', 'w') as result:
+#     print(*finder('main'), sep='\n', file=result)

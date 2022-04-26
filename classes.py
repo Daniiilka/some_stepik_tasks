@@ -173,3 +173,35 @@ class Buffer:
 # a.append('msg 1')
 # a.append('msg 2')
 # print(a)
+
+# class Tree:
+#     def __init__(self, name):
+#         self.name = name
+#         self.age = 1
+#         self.height = 1
+#
+#     def info(self):
+#         return self.name, self.age, self.height
+#
+#     def grow(self):
+#         self.age += 1
+#         self.height += 2
+#
+#
+# class FruitTree(Tree):
+#     def __init__(self, name):
+#         super(FruitTree, self).__init__(name)
+#
+#     def get_fruits(self):
+#         return self.age/2
+#
+#
+# if __name__ == '__main__':
+#
+#     tr = Tree('Olega')
+#     print(tr.info())
+#     tr.grow()
+#     print(tr.info())
+#     frt = FruitTree('Serega')
+#     print(frt.get_fruits())
+#     print(frt.info())

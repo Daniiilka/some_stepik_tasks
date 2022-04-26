@@ -163,3 +163,35 @@ B — интенсивность синей составляющей цвета.
 # c = [int(i) for i in input().split()]
 # n = int(input())
 # print(evaluate(c, n))
+
+"""Реализуйте функцию mod_checker(x, mod=0), которая будет генерировать лямбда функцию от одного аргумента y,
+которая будет возвращать True, если остаток от деления y на x равен mod, и False иначе.
+"""
+
+
+# def mod_checker(x, mod=0):
+#     return lambda y: y % x == mod
+#
+#
+# mod_3 = mod_checker(3)
+#
+# print(mod_3(3)) # True
+# print(mod_3(4)) # False
+#
+# mod_3_1 = mod_checker(3, 1)
+# print(mod_3_1(4)) # True
+
+"""
+Реализация функции partial и ее аналога на lambda
+"""
+# from functools import partial
+# from util import hyperbola
+#
+# if __name__ == '__main__':
+#     x_values = range(0, 100)
+#
+#     res = list(map(lambda el: hyperbola(el, 100), x_values))
+#     print(res)
+#
+#     res_partial = list(map(partial(hyperbola, y=100), x_values))
+#     print(res_partial)

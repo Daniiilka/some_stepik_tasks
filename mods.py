@@ -212,10 +212,44 @@ nn человек, пронумерованных числами от 11 до nn
 # Четвертая четверть: {fourth}')
 
 
-"""Дополните приведенный код так, чтобы он вывел список, содержащий средние арифметические значения чисел каждого
-вложенного кортежа в заданном кортеже кортежей numbers."""
-# numbers = ((10, 10, 10, 12), (30, 45, 56, 45), (81, 80, 39, 32), (1, 2, 3, 4), (90, 10))
-# result = []
-# for el in numbers:
-#     result.append(sum(list(el))/len(el))
-# print(result)
+"""В первой строке дано три числа, соответствующие некоторой дате date -- год, месяц и день.
+Во второй строке дано одно число days -- число дней.
+
+Вычислите и выведите год, месяц и день даты, которая наступит, когда с момента исходной даты date пройдет число
+дней, равное days."""
+
+# from datetime import date, timedelta
+#
+#
+# def next_date(year, month, day, new_day):
+#     date_now = date(year, month, day)
+#     delta = timedelta(days=new_day)
+#     date_now += delta
+#     return date_now.year, date_now.month, date_now.day
+#
+#
+# year, month, day = map(int, input().split())
+# nd = int(input())
+# print(*next_date(year, month, day, nd))
+"""Алиса владеет интересной информацией, которую хочет заполучить Боб.
+Алиса умна, поэтому она хранит свою информацию в зашифрованном файле.
+У Алисы плохая память, поэтому она хранит все свои пароли в открытом виде в текстовом файле.
+
+Бобу удалось завладеть зашифрованным файлом с интересной информацией и файлом с паролями, но он не смог понять какой из
+паролей ему нужен. Помогите ему решить эту проблему.
+
+Алиса зашифровала свою информацию с помощью библиотеки simple-crypt.
+Она представила информацию в виде строки, и затем записала в бинарный файл результат работы метода
+simplecrypt.encrypt."""
+# from simplecrypt import decrypt
+#
+# with open('file_sources/encrypted.bin', 'rb') as file, open('file_sources/passwords.txt') as passwords:
+#     encrypted = file.read()
+#     passwords = list(map(str.strip, passwords.readlines()))
+#
+#
+# for password in passwords:
+#     try:
+#         print(decrypt(password, encrypted).decode('utf-8'))
+#     except:
+#         continue
